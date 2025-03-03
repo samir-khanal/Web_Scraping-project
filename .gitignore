@@ -1,0 +1,6 @@
+env/
+__pycache__/
+config.py 
+# Ignore database files
+player_info.db
+.env

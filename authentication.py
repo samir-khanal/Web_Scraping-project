@@ -1,7 +1,10 @@
+import os
+try:
+    from config import APP_USERNAME, APP_PASSWORD
+except ImportError:
+    APP_USERNAME = os.environ.get("APP_USERNAME", "default_user")
+    APP_PASSWORD = os.environ.get("APP_PASSWORD", "default_pass")
 def authenticate():
-    #Correct username and password
-    USERNAME="player"
-    PASSWORD="goal!" 
 
     print("HEY! Welcome to my program,\nHere you can search for the information of any Football players you want!!!!")
     attempts=3
@@ -9,7 +12,7 @@ def authenticate():
         username=input("ENTER USERNAME:").strip().lower()
         password=input("ENTER PASSWORD:").strip()
 
-        if username == USERNAME and password == PASSWORD:
+        if username == APP_USERNAME and password == APP_PASSWORD:
             print("...Access Granted!!...")
             return True
         else:
