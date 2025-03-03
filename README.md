@@ -50,3 +50,30 @@ This project allows users to search for football player information using web sc
 To start the program, run:
 ```sh
 python transfer.py
+📌 Login with your username & password (set in config.py or environment variables).
+
+Enter the football player’s name when prompted.
+Select a player from the list.
+View detailed player stats.
+Data is automatically stored in player_info.db for future use.
+
+### 🛠 Additional Notes
+🔐 Security & .gitignore
+The config.py file is excluded from Git tracking to protect credentials.
+If you want to share this project but keep it secure, never commit config.py!
+Instead, use config.example.py to provide a template for other users.
+
+### 🗂 Database Management
+All scraped player data is stored in player_info.db.
+You can open it using SQLite tools:
+```sh
+sqlite3 player_info.db
+
+### 💡 Future Improvements
+🔹 Add GUI for easier interaction
+🔹 Implement more detailed scraping (player history, stats, etc.)
+🔹 Deploy as a Flask API for web access
+
+### 📌 Author & Contact
+👤 Samir Khanal
+ LinkedIn:https://www.linkedin.com/in/samir-khanal7/
