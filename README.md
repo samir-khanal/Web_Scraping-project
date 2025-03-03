@@ -50,7 +50,8 @@ This project allows users to search for football player information using web sc
 To start the program, run:
 ```sh
 python transfer.py
-📌 Login with your username & password (set in config.py or environment variables).
+```
+## 📌 Login with your username & password (set in config.py or environment variables).
 
 Enter the football player’s name when prompted.
 Select a player from the list.
@@ -68,6 +69,7 @@ All scraped player data is stored in player_info.db.
 You can open it using SQLite tools:
 ```sh
 sqlite3 player_info.db
+```
 
 ### 💡 Future Improvements
 🔹 Add GUI for easier interaction
