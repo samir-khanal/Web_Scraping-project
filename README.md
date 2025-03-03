@@ -18,34 +18,27 @@ Copy
 Edit
 git clone https://github.com/samir-khanal/Web_Scraping-project.git
 cd Web_Scraping-project
+
 2️⃣ Install Required Dependencies
 Ensure you have Python installed (≥3.7), then run:
-
-sh
-Copy
-Edit
 pip install -r requirements.txt
+
 3️⃣ Configure Authentication
 For security reasons, credentials are not included in the repository.
 
 Option 1: Using a config.py file
 Copy the example configuration file:
 sh
-Copy
-Edit
 cp config.example.py config.py
+
 Open config.py and set your username & password:
 python
-Copy
-Edit
 APP_USERNAME = "testuser"
 APP_PASSWORD = "testpass"
+
 Option 2: Using Environment Variables (Recommended for production)
 Instead of using config.py, set credentials as environment variables:
-
 sh
-Copy
-Edit
 export APP_USERNAME="testuser"
 export APP_PASSWORD="testpass"
 (For Windows users, use set instead of export.)
@@ -54,8 +47,6 @@ export APP_PASSWORD="testpass"
 To start the program, run:
 
 sh
-Copy
-Edit
 python transfer.py
 📌 Login with your username & password (set in config.py or environment variables).
 
@@ -63,18 +54,19 @@ Enter the football player’s name when prompted.
 Select a player from the list.
 View detailed player stats.
 Data is automatically stored in player_info.db for future use.
+
 🛠 Additional Notes
 🔐 Security & .gitignore
 The config.py file is excluded from Git tracking to protect credentials.
 If you want to share this project but keep it secure, never commit config.py!
 Instead, use config.example.py to provide a template for other users.
+
 🗂 Database Management
 All scraped player data is stored in player_info.db.
 You can open it using SQLite tools:
 sh
-Copy
-Edit
 sqlite3 player_info.db
+
 💡 Future Improvements
 🔹 Add GUI for easier interaction
 🔹 Implement more detailed scraping (player history, stats, etc.)
